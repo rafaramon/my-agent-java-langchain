@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: my-agent-java-langchain
+  datasource:
+    url: jdbc:postgresql://localhost:5432/myagent
+    username: sradev
+    password: blank
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+langchain4j:
+  google-ai-gemini:
+    chat-model:
+      api-key: "${GEMINI_API_KEY:dummy-key-for-tests}"
+      model-name: gemini-3-flash-preview
+      temperature: 0.3
+
+

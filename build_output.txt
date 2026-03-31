@@ -1,0 +1,132 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+
+> Task :compileTestJava FAILED
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/DeleteUserControllerTest.java:27: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/DeleteUserControllerTest.java:30: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/DeleteUserControllerTest.java:33: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/CreateUserControllerTest.java:34: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/CreateUserControllerTest.java:37: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/CreateUserControllerTest.java:40: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RecipeSuggestionControllerTest.java:35: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RecipeSuggestionControllerTest.java:38: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RecipeSuggestionControllerTest.java:41: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RecipeSuggestionControllerTest.java:51: error: constructor RecipeSuggestion in record RecipeSuggestion cannot be applied to given types;
+        RecipeSuggestion suggestion = new RecipeSuggestion("Delicious Pasta", "Boil water...");
+                                      ^
+  required: String
+  found:    String,String
+  reason: actual and formal argument lists differ in length
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RegenerateApiKeyControllerTest.java:27: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RegenerateApiKeyControllerTest.java:30: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RegenerateApiKeyControllerTest.java:33: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/GetUserControllerTest.java:30: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/GetUserControllerTest.java:33: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/GetUserControllerTest.java:36: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+/home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/GetUserControllerTest.java:39: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+    @MockBean
+     ^
+1 error
+16 warnings
+
+[Incubating] Problems report is available at: file:///home/rramon/desarrollo/my-agent/my-agent-java-langchain/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Compilation failed; see the compiler output below.
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RecipeSuggestionControllerTest.java:51: error: constructor RecipeSuggestion in record RecipeSuggestion cannot be applied to given types;
+          RecipeSuggestion suggestion = new RecipeSuggestion("Delicious Pasta", "Boil water...");
+                                        ^
+    required: String
+    found:    String,String
+    reason: actual and formal argument lists differ in length
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/DeleteUserControllerTest.java:27: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/DeleteUserControllerTest.java:30: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/DeleteUserControllerTest.java:33: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/CreateUserControllerTest.java:34: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/CreateUserControllerTest.java:37: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/CreateUserControllerTest.java:40: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RecipeSuggestionControllerTest.java:35: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RecipeSuggestionControllerTest.java:38: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RecipeSuggestionControllerTest.java:41: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RegenerateApiKeyControllerTest.java:27: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RegenerateApiKeyControllerTest.java:30: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/RegenerateApiKeyControllerTest.java:33: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/GetUserControllerTest.java:30: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/GetUserControllerTest.java:33: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/GetUserControllerTest.java:36: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  /home/rramon/desarrollo/my-agent/my-agent-java-langchain/src/test/java/com/myagent/api/controller/GetUserControllerTest.java:39: warning: [removal] MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+      @MockBean
+       ^
+  1 error
+  16 warnings
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 1s
+3 actionable tasks: 1 executed, 2 up-to-date
