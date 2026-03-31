@@ -5,7 +5,10 @@ import com.myagent.application.usecase.GetAllUsersUseCase;
 import com.myagent.application.usecase.GetUserUseCase;
 import com.myagent.domain.model.User;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.UUID;
@@ -45,7 +48,6 @@ public class GetUserController {
                 user.description(),
                 user.email(),
                 user.login(),
-                user.apiKey()
-        );
+                user.apiKey());
     }
 }

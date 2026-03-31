@@ -1,6 +1,6 @@
 package com.myagent.api.controller;
 
-import com.myagent.application.usecase.GetRecipeSuggestionUseCase;
+import com.myagent.application.usecase.GetRecipeSuggestion2UseCase;
 import com.myagent.api.dto.RecipeSuggestionRequest;
 import com.myagent.api.dto.RecipeSuggestionResponse;
 import com.myagent.domain.model.RecipeSuggestion;
@@ -13,18 +13,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1/recipes")
-public class RecipeSuggestionController {
+public class RecipeSuggestion2Controller {
 
-    private final GetRecipeSuggestionUseCase getRecipeSuggestionUseCase;
+    private final GetRecipeSuggestion2UseCase getRecipeSuggestion2UseCase;
 
-    public RecipeSuggestionController(GetRecipeSuggestionUseCase getRecipeSuggestionUseCase) {
-        this.getRecipeSuggestionUseCase = getRecipeSuggestionUseCase;
+    public RecipeSuggestion2Controller(GetRecipeSuggestion2UseCase getRecipeSuggestion2UseCase) {
+        this.getRecipeSuggestion2UseCase = getRecipeSuggestion2UseCase;
     }
 
-    @PostMapping("/suggestions")
-    public ResponseEntity<?> suggest(@RequestBody RecipeSuggestionRequest request) {
+    @PostMapping("/suggestions2")
+    public ResponseEntity<?> suggest2(@RequestBody RecipeSuggestionRequest request) {
         try {
-            RecipeSuggestion suggestion = getRecipeSuggestionUseCase.execute(request.prompt());
+            RecipeSuggestion suggestion = getRecipeSuggestion2UseCase.execute(request.prompt());
             return ResponseEntity.ok(new RecipeSuggestionResponse(suggestion.content()));
         } catch (IllegalArgumentException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
@@ -33,5 +33,4 @@ public class RecipeSuggestionController {
                     .body("An error occurred while generating the suggestion.");
         }
     }
-
 }
